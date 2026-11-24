@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Diary | Personal Finance Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <p class="eyebrow">PERSONAL FINANCE JOURNAL</p>
+                <h1>Expense Diary<span>.</span></h1>
+                <p class="subtitle">
+                    A little money diary for your everyday life.
+                </p>
+            </div>
+
+            <div class="date-label">
+                YOUR FINANCES, YOUR WAY
+            </div>
+        </header>
+
+
+        <!-- TOTAL EXPENSE -->
+        <section class="total-section">
+
+            <div class="total-card">
+                <div class="total-info">
+                    <p class="section-label">TOTAL EXPENSES</p>
+                    <h2>₹<span id="total">2069</span></h2>
+                    <p class="total-note">Your spending at a glance</p>
+                </div>
+
+                <div class="total-icon">₹</div>
+            </div>
+
+        </section>
+
+
+        <!-- ADD EXPENSE -->
+        <section class="form-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">KEEP A RECORD</p>
+                    <h2>Add New Expense</h2>
+                </div>
+
+                <span class="step-number">01 / ADD</span>
+            </div>
+
+            <form id="expenseForm">
+
+                <div class="form-group">
+                    <label for="name">Expense Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="e.g. Coffee, Books, Shopping"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="amount">Amount (₹)</label>
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="Enter amount"
+                            min="1"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" required>
+                            <option value="">Select category</option>
+                            <option value="Food">Food</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Education">Education</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="add-button">
+                    + Add Expense
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- EXPENSE HISTORY -->
+        <section class="history-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">YOUR DAILY RECORD</p>
+                    <h2>Expense History</h2>
+                </div>
+
+                <span class="step-number">02 / HISTORY</span>
+            </div>
+
+
+            <!-- FILTER -->
+            <div class="filter-section">
+
+                <label for="filter">Filter by category</label>
+
+                <select id="filter">
+                    <option value="All">All Categories</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                </select>
+
+            </div>
+
+
+            <!-- EXPENSE LIST -->
+            <div id="expenseList">
+
+                <div class="expense-item">
+                    <div class="expense-details">
+                        <div class="category-icon">F</div>
+                        <div>
+                            <h3>Starbucks Coffee</h3>
+                            <p>Food · 24 November 2026</p>
+                        </div>
+                    </div>
+                    <strong>− ₹250</strong>
+                </div>
+
+
+                <div class="expense-item">
+                    <div class="expense-details">
+                        <div class="category-icon">E</div>
+                        <div>
+                            <h3>College Notebooks</h3>
+                            <p>Education · 23 November 2026</p>
+                        </div>
+                    </div>
+                    <strong>− ₹450</strong>
+                </div>
+
+
+                <div class="expense-item">
+                    <div class="expense-details">
+                        <div class="category-icon">S</div>
+                        <div>
+                            <h3>Shopping</h3>
+                            <p>Shopping · 22 November 2026</p>
+                        </div>
+                    </div>
+                    <strong>− ₹899</strong>
+                </div>
+
+
+                <div class="expense-item">
+                    <div class="expense-details">
+                        <div class="category-icon">F</div>
+                        <div>
+                            <h3>Pizza with Friends</h3>
+                            <p>Food · 21 November 2026</p>
+                        </div>
+                    </div>
+                    <strong>− ₹350</strong>
+                </div>
+
+
+                <div class="expense-item">
+                    <div class="expense-details">
+                        <div class="category-icon">T</div>
+                        <div>
+                            <h3>Auto Fare</h3>
+                            <p>Travel · 20 November 2026</p>
+                        </div>
+                    </div>
+                    <strong>− ₹120</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>Spend mindfully. Save consistently.</p>
+            <span>EXPENSE DIARY © 2026</span>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff3d8;
+    color: #49352b;
+    padding: 40px 20px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: #fffaf0;
+    padding: 30px;
+    border-radius: 28px;
+    border: 2px solid #49352b;
+    box-shadow: 10px 10px 0px #49352b;
+}
+
+/* HEADER */
+
+header {
+    background: #ffd65a;
+    padding: 35px 20px;
+    border-radius: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 2px solid #49352b;
+}
+
+.tagline {
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #a34d32;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    color: #49352b;
+}
+
+header p:last-child {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* TOTAL EXPENSE */
+
+.total-card {
+    background: #ff735e;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #49352b;
+    color: white;
+    box-shadow: 5px 5px 0 #49352b;
+}
+
+.total-card h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.total-card h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    margin-top: 8px;
+}
+
+/* FORM AND HISTORY */
+
+.expense-form,
+.history {
+    background: #b9dcc1;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #49352b;
+}
+
+.history {
+    background: #fff0d0;
+}
+
+.expense-form h2,
+.history h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 29px;
+    color: #49352b;
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* INPUTS */
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #49352b;
+    border-radius: 11px;
+    background: #fffaf0;
+    font-family: 'Poppins', sans-serif;
+    color: #49352b;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #ff735e;
+    box-shadow: 0 0 0 4px rgba(255, 115, 94, 0.18);
+}
+
+/* BUTTON */
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 22px;
+    border: 2px solid #49352b;
+    border-radius: 12px;
+    background: #49352b;
+    color: #fff3d8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #ff735e;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 0 #49352b;
+}
+
+/* EXPENSE HISTORY */
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    margin-bottom: 12px;
+    background: #fffaf0;
+    border: 1.5px solid #49352b;
+    border-radius: 13px;
+    transition: 0.25s;
+}
+
+.expense-item:hover {
+    background: #ffd65a;
+    transform: translateX(4px);
+}
+
+.expense-item span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.expense-item strong {
+    color: #d9533d;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px 5px 5px;
+    font-size: 13px;
+    color: #8c6347;
+    font-weight: 600;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 15px;
+        box-shadow: 5px 5px 0 #49352b;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .expense-form,
+    .history,
+    .total-card {
+        padding: 20px;
+    }
+
+    .expense-form h2,
+    .history h2 {
+        font-size: 24px;
+    }
+}
